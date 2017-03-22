@@ -1,5 +1,5 @@
 [gerrit]
-host=review.lineageos.org
-project=LineageOS/lineageos_updater
+host=review.exynos5420.org
+project=Exynos5420/exynos5420_updater
 port=29418
 defaultbranch=master

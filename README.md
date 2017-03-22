@@ -1,6 +1,6 @@
-LineageOS Updater Backend
+Exynos5420 Team Updater Backend
 =======================
-Copyright (c) 2017 The LineageOS Project<br>
+Copyright (c) 2017 The Exynos5420 Team<br>
 
 Adding a new device
 ---
@@ -17,11 +17,6 @@ devices.json is an array of objects, each with several fields:
 so limit this to around 25 characters.
 * `has_recovery`: (*optional*) whether or not the device has a separate recovery partition. Defaults to `true`.
 * `image`: (*optional*) the filename (excluding .png) of the device's image. Defaults to the value of `model`.
-* `wiki`: (*optional*) the name of the wiki page, excluding "\_info". Defaults to the value of `model`.
-For example, `i9300` would be shown on the website as a link to http://wiki.lineageos.org/i9300_info.html.
-* `special_instructions_url`: (*optional*) a url with special instructions for a user to read before downloading. - 
-e.g. `http://wiki.lineageos.org/i9300_install.html#installing-a-custom-recovery`. This will show in a lightbox on the
-device's download page.
 
 This file is no longer read from disk by the application and must be loaded into mongo. To do so, run: 
 
